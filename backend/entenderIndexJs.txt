@@ -1,0 +1,56 @@
+
+/*
+const express = require('express'); importa o express que é uma biblioteca que acilita a criação de 
+                                    APIs com o NOde.js. Vamos usar essa biblioteca pra gerenciar o servidor 
+*/
+
+/*
+const app = express();     cria uma instancia da aplicação express. É o ponto de interação com a biblioteca.
+                           ress(); é uma função que cria e retorna um objeto com as funcionalidades do express 
+*/
+
+/*
+const port = 3000;      É a porta por onde o servidor vai operar, é o ponto de saida e entrada de dados, 
+                        cada numero de porta executa um tipo expecifico de serviço.Junto do IP q identifica o
+                        computador a porta identifica o processo.   
+*/
+
+/*
+app.use(express.json());   É um Middleware (função) que faz a aplicação do express trabalhar com o JSON que o formato de dados 
+                           mais leve e facil de entender    
+*/
+
+/*                           
+app.get('/',(req, res)=> {           O método get é o ato de pegar algo do servido e trazer para o programa
+res.send('Olá, mundo');              quando ele ocorre na raiz do site '/' o retorno é a frase "Olá, mundo" (teste)
+});                                  
+*/
+
+/*
+app.post('/sacola', (req, res)=> { // o post é feito em 'sacola'
+    try{
+        const sacola = req.doby;
+        if(!sacola)
+            res.status(400).send('Dados da sacola ausentes');
+        
+    console.log(`sacola reebida ${sacola}`);
+    res.status(200).send('sacola recebida com sucesso');
+
+    }catch (error){
+        console.error('erro ao abrir sacola: ', error);
+        res.status(500).send('Erro do servidor ao processar sacola');
+    }
+    
+});
+Quando o metodo post é feito no diretório 'sacola' o arquivo JSON enviado é lido e o objeto com seus dados 
+é colocado em sacola, isso apenas, é o suficiente para o meotod por funcionar,  essa socola ja está no servidor
+ quando a linha é executada.O console.log é pra debug e o res.status(200)
+*/
+
+/*
+app.listen(port, ()=> {
+console.log(`servidor rodando em http://localhost:${port}`)
+});    
+O servidor foi configurado e está "escutando" as requisições na porta 3000
+quando em execução a função de callback responde com o console.log 
+*/

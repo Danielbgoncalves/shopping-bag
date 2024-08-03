@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <script src="script.js"></script>
+    <title>Padaria Fictícia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#buffet">Contato para Buffet</a></li>
+            </ul>
+            <div class="user-greeting">
+                <label for="username">Digite seu nome: </label>
+                <input type="text" id="username" placeholder="Seu nome">
+                <span id="greeting-message"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="produto">
+                <img src="https://img.cpcdn.com/recipes/4957946/894x1461s/9a7caa6108cae8e6faa2520db349e182?u=16405236&p=1519649124" alt="Produto 1">
+                <button class="adicionar-sacola" data-id="1">Adicionar à Sacola</button>
+            </div>
+            <div class="produto">
+                <img src="https://th.bing.com/th/id/R.8d5a4de8c2f3765da7e490b4793c2c10?rik=QFhTTd1VWcxPUA&pid=ImgRaw&r=0" alt="Produto 2">
+                <button class="adicionar-sacola" data-id="2" >Adicionar à Sacola</button>
+            </div>
+            <div class="produto">
+                <img src="https://1.bp.blogspot.com/-sIFfdURd2JM/WO8O2tJwTxI/AAAAAAAAB24/mN0-SQreZbEVOVK9ZI4S8CO_N2rmRbszgCLcB/s400/134.jpg" alt="Produto 3">
+                <button class="adicionar-sacola" data-id="3" >Adicionar à Sacola</button>
+            </div>
+            <div class="produto">
+                <img src="https://i.iplsc.com/pizza-z-pieczarkami/000ASZRDT6FMUEID-C122-F4.jpg" alt="Produto 1">
+                <button class="adicionar-sacola" data-id="4">Adicionar à Sacola</button>
+            </div>
+            <div class="produto">
+                <img src="https://th.bing.com/th/id/OIP.zA78iAQwTOd-95KoXdqEzwHaHa?rs=1&pid=ImgDetMain" alt="Produto 2">
+                <button class="adicionar-sacola" data-id="5" >Adicionar à Sacola</button>
+            </div>
+            <div class="produto">
+                <img src="https://receitasmagicas.net/wp-content/uploads/2022/05/16-8.jpg" alt="Produto 3">
+                <button class="adicionar-sacola" data-id="6" >Adicionar à Sacola</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+
+        <button id="enviar-pedido">Enviar Pedido</button>
+
+    </main>
+</body>
+</html>

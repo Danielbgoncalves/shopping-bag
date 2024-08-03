@@ -1,0 +1,14 @@
+{
+  "name": "aaa-projeto",
+  "version": "1.0.0",
+  "description": "Esse é o backend do projeto, criação de uma API e servidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Borges Gonçalves, 44danbor@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

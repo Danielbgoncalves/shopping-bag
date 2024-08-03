@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8b400;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user-greeting {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-greeting label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.user-greeting input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.user-greeting #greeting-message {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto {
+    margin: 10px;
+    text-align: center;
+}
+
+.produto img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.adicionar-sacola {
+    background-color: #f8b400;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.adicionar-sacola.adicionado {
+    background-color: #28a745;
+}
+
+#enviar-pedido {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #f8b400;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#enviar-pedido:hover {
+    background-color: #e09d00;
+}
+
+#enviar-pedido.enviado {
+    background-color: #d19201;
+}
