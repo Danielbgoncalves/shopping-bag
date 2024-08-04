@@ -24,7 +24,8 @@ function produtosNaSacola(sacola){
 
 function valorTotal(sacola){
     let total = 0;
-    sacola.forEach(item =>{ total += item.valor });
+    sacola.forEach(item =>{ total += item.preço });
+    return total;
 }
 
 function buscarSacolaNoServidor(){
@@ -37,11 +38,20 @@ function buscarSacolaNoServidor(){
         data.forEach(entrada => {
             const user = entrada.username;
             const sacola = entrada.sacola;
+            //console.log(sacola)
             refreshTable(user, sacola)})
     })
     .catch(error => {
         console.error(`Erro ao buscar sacolas do servidor: ${error}`)
-    });
+    });  
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const atualizarTabelaBUtton = document.querySelector('#atualizar-tabela');
+
+    atualizarTabelaBUtton.addEventListener('click', () => {
+        window.location.reload();    
+    });
+});
 
 window.onload = buscarSacolaNoServidor;

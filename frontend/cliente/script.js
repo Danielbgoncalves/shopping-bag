@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     usernameInput.addEventListener('input', function() {
         greetingMessage.textContent = this.value ? `Olá, ${this.value}!` : '';
-        usernameColetado = this.textContent;
+        usernameColetado = this.value;
     });
 });
 

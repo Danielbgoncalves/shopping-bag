@@ -26,6 +26,22 @@ h1, h2 {
     color: #747373;
 }
 
+#atualizar-tabela {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#atualizar-tabela:hover {
+    background-color: #218838;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
