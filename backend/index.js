@@ -4,10 +4,20 @@ const cors = require('cors')
 const app = express();              
 const port = 3001;
 
+const allowedOrigins = ['http://127.0.0.1:5500', 'https://danielbgoncalves.github.io'];
+
 const corsOption = {
-    origin: 'http://127.0.0.1:5500',
-    optionsSuccessStatus: 200
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true); // Permite solicitações sem origem (ex. mobile apps, etc.)
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  optionsSuccessStatus: 200 // alguns browsers usam 204
 };
+//Admito que a parte em cima foi feita por ia, eu não tinha ideia de como fazer isso 
 
 app.use(cors(corsOption));
 app.use(express.json()); 

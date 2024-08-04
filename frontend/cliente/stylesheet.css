@@ -66,8 +66,8 @@ main {
 }
 
 .produto img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: block;
     margin: 0 auto 10px;
 }
@@ -90,8 +90,8 @@ main {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background-color: #f8b400;
     border: none;
     border-radius: 50%;

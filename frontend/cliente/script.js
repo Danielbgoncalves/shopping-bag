@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sendButton = document.querySelector('#enviar-pedido'); // Sem o All no final pq isso é para quando se trata de varios botões, retorna uma lista deles
     
     sendButton.addEventListener('click', function() {
-        if(sacola.length === 0){
+        if(sacola.length === 0 || !usernameColetado){
             console.log('Envio de sacola vazia negado');
         } else {
             this.textContent = 'Enviado';
