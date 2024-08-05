@@ -1,7 +1,7 @@
 
 # Shopping Bag !!!
 
-Esse projeto mostra a interação entre dois sites separados, um é a recepeção de um padaria no qual o usuário pode pedir seu lanche, o outro é o que os administradores e trabalhadores da padaria veriam, recebem o nome, ítens comprados e etc.
+Esse projeto mostra a interação entre dois sites separados, um é a recepeção de um padaria no qual o usuário pode pedir seu lanche, o outro é o que os administradores e trabalhadores da padaria veem, recebem o nome, ítens comprados e etc.
 
 O foco é trabalhar no backend, na programação de um servidor simples usando Node.js com a biblioteca Express e trabalhar conceitos e funcionalidades do backend.
 
