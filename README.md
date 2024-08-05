@@ -5,6 +5,9 @@ Esse projeto mostra a interação entre dois sites separados, um é a recepeçã
 
 O foco é trabalhar no backend, na programação de um servidor simples usando Node.js com a biblioteca Express e trabalhar conceitos e funcionalidades do backend.
 
+## Mais do Srvidor
+É usado um servidor local no projeto, então é necessário seu ativamento na minha máquina para a integração entre os sites funcionar. Um servidor online é uma boa opção com um bando com dados integrado mas como é um projeto pessoal fiz uma resumida para um serv local que é, inclusive, gratuido. risos.
+
 ## Screenshots
 
 ![App Screenshot](Assets/Screenshot1.png)
@@ -12,7 +15,7 @@ O foco é trabalhar no backend, na programação de um servidor simples usando N
 
 
 
-## PArte do código do backend
+## Exemplo código do backend
 
 ```javascript
 const express = require('express'); 
