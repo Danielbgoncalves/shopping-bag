@@ -10,7 +10,7 @@ const app = express();     cria uma instancia da aplicação express. É o ponto
 */
 
 /*
-const port = 3000;      É a porta por onde o servidor vai operar, é o ponto de saida e entrada de dados, 
+const port = 3001;      É a porta por onde o servidor vai operar, é o ponto de saida e entrada de dados, 
                         cada numero de porta executa um tipo expecifico de serviço.Junto do IP q identifica o
                         computador a porta identifica o processo.   
 */
