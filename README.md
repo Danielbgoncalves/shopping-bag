@@ -7,8 +7,8 @@ O foco é trabalhar no backend, na programação de um servidor simples usando N
 
 ## Screenshots
 
-![App Screenshot](Assets/Screenshot1)
-![App Screenshot](Assets/Screenshot2)
+![App Screenshot](Assets/Screenshot1.png)
+![App Screenshot](Assets/Screenshot2.png)
 
 
 
